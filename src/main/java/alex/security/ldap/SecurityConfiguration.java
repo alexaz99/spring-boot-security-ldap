@@ -1,8 +1,9 @@
 package alex.security.ldap;
 
-import org.springframework.LdapDataEntry;
+
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
 
@@ -12,6 +13,7 @@ import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
  * We are doing this by creating a class which extends a  WebSecurityConfigurerAdapter
  * and overiding.
  */
+@EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     /**
