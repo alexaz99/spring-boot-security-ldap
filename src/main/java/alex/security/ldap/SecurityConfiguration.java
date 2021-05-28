@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
  * Hot to tell spring security to enable LDAP and use Spring authentication?
  * We do that by configuring Spring security.
  * We are doing this by creating a class which extends a  WebSecurityConfigurerAdapter
- * and overiding.
+ * and overriding.
  */
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
